@@ -1,21 +1,70 @@
-#header {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  position: fixed;
-  top: 0px;
-  z-index: 11;
-  padding: 0px 50px;
-  width: 100%;
-  height: var(--nav-height);
-  background-color: transparent;
-  backdrop-filter: blur(10px);
-  transition: var(--transition);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
+.nav {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+    padding: 0px 50px;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    filter: none !important;
+    pointer-events: auto !important;
+    user-select: auto !important;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    // box-shadow: 0 10px 30px -10px var(--color-background-light);
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    counter-reset: item 0;
+    z-index: 12;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+
+    .anchors {
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+
+      ol {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+
+        li {
+          margin: 0 5px;
+          margin: 0px 5px;
+          position: relative;
+          counter-increment: item 1;
+          font-size: 13px;
+
+          a {
+            padding: 10px;
+
+            &::before {
+              content: "0" counter(item) ".";
+              margin-right: 5px;
+              color: var(--color-blue);
+              font-size: var(--fz-xxs);
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: var(--mobile)) {

@@ -1,0 +1,28 @@
+.bio {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    a {
+      width: fit-content;
+    }
+  }
+
+  &-photo {
+    display: flex;
+    justify-content: flex-end;
+
+    img {
+      border: 2px solid var(--color-text-light);
+      border-radius: 50%;
+      object-fit: fill;
+    }
+  }
+}

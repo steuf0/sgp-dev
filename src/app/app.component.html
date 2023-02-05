@@ -1,3 +1,39 @@
 <app-header></app-header>
+<div class="side-div right">
+  <div class="side-content">
+    <a class="lang text-center">
+      <img
+        [src]="
+          language === 'PT'
+            ? '../assets/images/br-flag.png'
+            : '../assets/images/uk-flag.png'
+        "
+        alt=""
+      />
+      {{ language }}
+    </a>
+  </div>
+</div>
 
+<div class="side-div left">
+  <div class="side-content">
+    <ul class="d-flex flex-column">
+      <li>
+        <a href="https://github.com/steuf0"
+          ><i-feather name="github"></i-feather
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/sthefanogarcia/"
+          ><i-feather name="linkedin"></i-feather
+        ></a>
+      </li>
+      <li>
+        <a href="mailto:sthefanog@gmail.com"
+          ><i-feather name="mail"></i-feather
+        ></a>
+      </li>
+    </ul>
+  </div>
+</div>
 <router-outlet></router-outlet>
