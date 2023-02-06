@@ -46,9 +46,6 @@
 
       &:hover {
         color: var(--color-blue);
-        i-feather {
-          stroke: var(--color-blue);
-        }
       }
     }
   }
@@ -62,17 +59,6 @@
 
       a {
         padding: 0;
-      }
-
-      i-feather {
-        width: 1.25rem;
-        height: 1.25rem;
-        fill: none;
-
-        &:hover {
-          transform: scale(1.1);
-          stroke: var(--color-blue);
-        }
       }
     }
   }

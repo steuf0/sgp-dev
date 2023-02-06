@@ -1,3 +1,5 @@
+$desktop-xxl: 1440px;
+
 :root {
   //region colors
   --color-bg: #12130f;
@@ -22,7 +24,8 @@
   --fz-heading: 32px;
 
   //region breakpoints
-  --mobile: "max-width: 768px";
+  --desktop-xxl: 1440px;
+  --mobile: 768px;
 
   //region effects
   --transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
