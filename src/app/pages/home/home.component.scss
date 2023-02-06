@@ -14,9 +14,26 @@
   position: relative;
   margin: 10px 0;
   padding-bottom: 0.5rem;
-  width: 50%;
+  width: 100%;
   font-size: clamp(26px, 5vw, var(--fz-heading));
   white-space: nowrap;
+
+  &.no-line {
+    display: block;
+    color: var(--color-blue);
+    font-size: clamp(1.25rem, 5vw, var(--fz-sm));
+
+    font-weight: 400;
+    width: initial;
+    &::before {
+      top: 0;
+      font-size: clamp(1rem, 5vw, var(--fz-sm));
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 
   &::before {
     position: relative;
@@ -43,6 +60,12 @@
 @media only screen and (max-width: v.$desktop-xxl) {
   .content {
     padding: 0 2.5rem;
+  }
+}
+
+@media only screen and (max-width: v.$desktop-lg) {
+  .content {
+    padding: 0 3rem;
   }
 }
 

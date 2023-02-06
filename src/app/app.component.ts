@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LanguageService } from './services/language.service';
+import { environment } from 'src/environment/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +10,9 @@ import { LanguageService } from './services/language.service';
 export class AppComponent {
   title = 'SGP.Dev';
   language: string = '';
+  env = environment;
 
   constructor(private languageService: LanguageService) {
-    this.language = this.languageService.language;
+    this.language = this.languageService.language.toUpperCase();
   }
 }

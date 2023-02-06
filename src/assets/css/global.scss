@@ -1,3 +1,5 @@
+@use "../css/variables" as v;
+
 $main-padding: 1.5rem;
 $photo-size: 400px;
 
@@ -24,7 +26,8 @@ body {
 }
 
 section {
-  margin: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .btn {
@@ -48,9 +51,13 @@ a {
   color: inherit;
 
   &:hover {
-    color: var(--color-orange);
+    color: var(--color-blue);
     cursor: pointer;
   }
+}
+
+ul {
+  list-style: none;
 }
 
 .restrict-width {
@@ -70,6 +77,10 @@ a {
 
 .text-orange {
   color: var(--color-orange);
+}
+
+.text-light {
+  color: var(--color-text-light) !important;
 }
 
 //region scrollbar
@@ -99,16 +110,27 @@ i-feather {
 }
 
 //region responsive
-.only-mobile {
+.only-mobile,
+.only-md {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .only-mobile {
+@media only screen and (max-width: v.$desktop-md) {
+  .only-md {
     display: initial;
   }
 
   .only-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: v.$mobile) {
+  .only-mobile {
+    display: initial;
+  }
+
+  .only-lg {
     display: none;
   }
 }

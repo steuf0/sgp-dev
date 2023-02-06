@@ -8,16 +8,6 @@
   align-items: center;
   margin-top: 0;
 
-  &-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    a {
-      width: fit-content;
-    }
-  }
-
   &-photo {
     img {
       border: 2px solid var(--color-text-light);
@@ -27,8 +17,22 @@
   }
 }
 
+@media only screen and (max-width: v.$desktop-md) {
+  .bio {
+    margin-top: 60px;
+    &-info {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
 @media only screen and (max-width: v.$mobile) {
   .bio {
-    margin-top: 100px;
+    margin-top: 60px;
+  }
+
+  app-resume-button {
+    align-self: center;
+    width: 80%;
   }
 }
