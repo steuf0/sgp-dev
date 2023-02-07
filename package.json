@@ -1,6 +1,7 @@
 {
   "name": "sgp-dev-angular",
   "version": "0.0.0",
+  "homepage": "https://steuf0.github.io/sgp-dev",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
