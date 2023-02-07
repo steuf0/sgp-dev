@@ -50,6 +50,30 @@ a {
   text-decoration: none;
   color: inherit;
 
+  &.underline {
+    display: inline-block;
+    position: relative;
+    color: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: var(--color-blue);
+      transform-origin: bottom left;
+      transition: transform 0.35s ease-out;
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+
   &:hover {
     color: var(--color-blue);
     cursor: pointer;
