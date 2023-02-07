@@ -14,6 +14,8 @@ export class ResumeButtonComponent {
   env = environment;
 
   constructor(private languageService: LanguageService) {
-    this.lang = this.languageService.language;
+    this.languageService.language.subscribe(
+      (language: string) => (this.lang = language)
+    );
   }
 }

@@ -1,6 +1,35 @@
 <app-header></app-header>
-<div class="side-div right only-lg">
+
+<div class="side-div left only-lg">
   <div class="side-content">
+    <ul class="d-flex flex-column">
+      <li *ngFor="let icon of icons">
+        <a [href]="icon.link" [target]="!icon.isEmail ? '_blank' : '_self'"
+          ><i-feather [name]="icon.name"></i-feather
+        ></a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- <div class="side-div right only-lg">
+  <div class="side-content">
+    <div class="dropdown">
+      <a
+        class="btn btn-blue dropdown-toggle"
+        role="button"
+        id="dropdownMenuLink"
+        data-bs-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        >{{ language }}</a
+      >
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" *ngFor="let lang of env.available_languages">{{
+          lang.name
+        }}</a>
+      </div>
+    </div>
     <a class="lang text-center">
       <img
         [src]="
@@ -13,27 +42,7 @@
       {{ language }}
     </a>
   </div>
-</div>
-
-<div class="side-div left only-lg">
-  <div class="side-content">
-    <ul class="d-flex flex-column">
-      <li>
-        <a [href]="env.links.github" target="_blank"
-          ><i-feather name="github"></i-feather
-        ></a>
-      </li>
-      <li>
-        <a [href]="env.links.linkedin" target="_blank"
-          ><i-feather name="linkedin"></i-feather
-        ></a>
-      </li>
-      <li>
-        <a href="mailto:{{ env.email }}"><i-feather name="mail"></i-feather></a>
-      </li>
-    </ul>
-  </div>
-</div>
+</div> -->
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>

@@ -63,3 +63,15 @@
     }
   }
 }
+
+.dropdown {
+  .dropdown-content {
+    display: none;
+  }
+
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}
