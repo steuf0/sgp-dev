@@ -1,0 +1,70 @@
+@use "../../../assets/css/variables" as v;
+
+.wrapper {
+  .active {
+    background-color: var(--color-blue-light3);
+    color: var(--color-blue);
+  }
+
+  button {
+    text-decoration: none;
+    background-color: transparent;
+    padding: 1.25rem;
+    border: none;
+    border-left: 2px solid var(--color-blue-light);
+    text-align: left;
+    white-space: nowrap;
+
+    &:not(:last-child) {
+      margin-right: 1.25rem;
+    }
+  }
+
+  ul {
+    position: relative;
+
+    li {
+      &::before {
+        content: "▹";
+        position: absolute;
+        left: 0px;
+        color: var(--color-blue);
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .work-buttons {
+    width: 16.66666667%;
+  }
+
+  .work-details {
+    width: 83.33333333%;
+
+    .work-role {
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      span {
+        color: var(--color-blue);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: v.$desktop-xl) {
+  .work-buttons {
+    width: 100% !important;
+    margin-bottom: 2rem;
+  }
+
+  .work-details {
+    width: 100% !important;
+  }
+}
