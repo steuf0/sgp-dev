@@ -1,0 +1,21 @@
+@use "../../../assets/css/variables" as v;
+
+.wrapper {
+  width: 60%;
+  margin: auto;
+
+  i-feather {
+    stroke: var(--color-blue);
+    margin-right: 0.5rem;
+  }
+
+  p {
+    color: var(--color-text-light);
+  }
+}
+
+@media only screen and (max-width: v.$mobile) {
+  .wrapper {
+    width: 100%;
+  }
+}

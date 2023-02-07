@@ -1,0 +1,9 @@
+<div [class.w-80]="mobileFullWidth">
+  <a
+    [href]="lang === 'pt' ? env.resume.pt : env.resume.en"
+    target="_blank"
+    class="btn btn-blue {{ cssClass }}"
+    [class.w-100]="mobileFullWidth"
+    >{{ lang === "pt" ? "Currículo" : "Resume" }}</a
+  >
+</div>

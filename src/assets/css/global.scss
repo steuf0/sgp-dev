@@ -1,0 +1,136 @@
+@use "../css/variables" as v;
+
+$main-padding: 1.5rem;
+$photo-size: 400px;
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: var(--color-text);
+  scroll-behavior: smooth;
+  transition: var(--transition);
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-bg);
+}
+
+#main {
+  min-height: 100vh;
+  width: 100%;
+}
+
+section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.btn {
+  border-radius: 0.25rem !important;
+}
+
+.btn-blue {
+  border: 1px solid var(--color-blue) !important;
+  color: var(--color-blue) !important;
+  background-color: transparent;
+  font-size: 1rem;
+
+  &:hover {
+    border: inherit;
+    background-color: var(--color-blue-light3);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: var(--color-blue);
+    cursor: pointer;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+.restrict-width {
+  max-width: $photo-size;
+  max-height: $photo-size;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//region text
+.text-blue {
+  color: var(--color-blue);
+}
+
+.text-orange {
+  color: var(--color-orange);
+}
+
+.text-light {
+  color: var(--color-text-light) !important;
+}
+
+//region scrollbar
+::-webkit-scrollbar {
+  width: 12px;
+
+  &-thumb {
+    background-color: var(--color-blue-light2);
+    border-radius: 10px;
+    border: 3px solid var(--color-bg);
+  }
+
+  &-track {
+    background: var(--color-bg);
+  }
+}
+
+//region icons
+i-feather {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+
+  &:hover {
+    transform: scale(1.1);
+    stroke: var(--color-blue) !important;
+  }
+}
+
+//region responsive
+.only-mobile,
+.only-md {
+  display: none;
+}
+
+@media only screen and (max-width: v.$desktop-md) {
+  .only-md {
+    display: initial;
+  }
+
+  .only-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: v.$mobile) {
+  .only-mobile {
+    display: initial;
+  }
+
+  .only-lg {
+    display: none;
+  }
+}
