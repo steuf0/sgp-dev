@@ -1,0 +1,32 @@
+$desktop-xxl: 1440px;
+$desktop-xl: 1200px;
+$desktop-lg: 1080px;
+$desktop-md: 991px;
+$mobile: 768px;
+
+:root {
+  //region colors
+  --color-bg: #12130f;
+  --color-text: #e1ccb1;
+  --color-blue: #06acd3;
+  --color-orange: #dc5318;
+  --color-text-light: rgba(225, 204, 177, 0.5);
+  --color-blue-light: rgba(6, 172, 211, 0.75);
+  --color-blue-light2: rgba(6, 172, 211, 0.35);
+  --color-blue-light3: rgba(6, 172, 211, 0.15);
+  --color-bg-light: #333333;
+
+  //region sizes
+  --nav-height: 100px;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+
+  //region effects
+  --transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
