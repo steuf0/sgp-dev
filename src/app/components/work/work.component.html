@@ -37,9 +37,8 @@
               <li
                 *ngFor="let detail of company.details | keyvalue"
                 class="text-light"
-              >
-                {{ detail.value }}
-              </li>
+                [innerHtml]="detail.value"
+              ></li>
             </ul>
           </div>
         </div>

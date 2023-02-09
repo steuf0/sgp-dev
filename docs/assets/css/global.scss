@@ -107,6 +107,10 @@ ul {
   color: var(--color-text-light) !important;
 }
 
+.text-blue-light {
+  color: var(--color-blue-light);
+}
+
 //region scrollbar
 ::-webkit-scrollbar {
   width: 12px;
