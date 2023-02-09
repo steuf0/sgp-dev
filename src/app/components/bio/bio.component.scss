@@ -19,7 +19,6 @@
 
 @media only screen and (max-width: v.$desktop-md) {
   .bio {
-    margin-top: 60px;
     &-info {
       margin-bottom: 2rem;
     }
@@ -27,10 +26,6 @@
 }
 
 @media only screen and (max-width: v.$mobile) {
-  .bio {
-    margin-top: 60px;
-  }
-
   app-resume-button {
     align-self: center;
     width: 80%;

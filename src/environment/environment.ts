@@ -1,8 +1,8 @@
 export const environment: any = {
   email: 'sthefanog@gmail.com',
   available_languages: [
-    { name: 'PT', image: '🇧🇷' },
-    { name: 'EN', image: '🇬🇧' },
+    { acro: 'PT', name: 'Português', image: '🇧🇷' },
+    { acro: 'EN', name: 'English', image: '🇬🇧' },
   ],
   resume: {
     pt: '/assets/files/Resume-PTBR.pdf',
@@ -19,6 +19,7 @@ export const environment: any = {
       role: 'Desenvolvedor front-end',
       period: 'Abril 2022 - Janeiro 2023',
       link: 'https://www.paytime.com.br',
+      total_time: '11 meses',
       details: {
         0: 'Fui exposto ao Angular 12 durante minha ocupação e o usei como a framework principal para a maioria dos projetos dentro da Paytime',
         1: 'Defendi e ajudei a estabelecer boas práticas dentro da equipe de engenharia, o que trouxe benefícios para a estabilidade do produto e higiene do código',

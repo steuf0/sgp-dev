@@ -28,7 +28,10 @@
                   </a></span
                 >
               </h3>
-              <p class="text-light">{{ company.period }}</p>
+              <p class="text-light">
+                {{ company.period }}
+                <span class="work-time">({{ company.total_time }})</span>
+              </p>
             </div>
             <ul>
               <li

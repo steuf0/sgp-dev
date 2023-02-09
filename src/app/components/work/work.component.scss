@@ -4,14 +4,15 @@
   .active {
     background-color: var(--color-blue-light3);
     color: var(--color-blue);
+    border-color: var(--color-blue-light);
   }
 
   button {
     text-decoration: none;
     background-color: transparent;
-    padding: 1.25rem;
+    padding: 0.75rem 1rem 0.5rem;
     border: none;
-    border-left: 2px solid var(--color-blue-light);
+    border-left: 2px solid;
     text-align: left;
     white-space: nowrap;
 
@@ -55,16 +56,43 @@
         color: var(--color-blue);
       }
     }
+    .work-time {
+      font-size: 0.875rem;
+      color: var(--color-text-light) !important;
+    }
   }
 }
 
 @media only screen and (max-width: v.$desktop-xl) {
-  .work-buttons {
-    width: 100% !important;
-    margin-bottom: 2rem;
-  }
+  .wrapper {
+    .work-buttons {
+      width: 100% !important;
+      margin-bottom: 0.5rem;
+      display: flex;
+      overflow-x: auto;
+      padding-bottom: 1rem;
 
-  .work-details {
-    width: 100% !important;
+      button {
+        border-left: none;
+        border-bottom: 2px solid var(--color-blue-light3);
+      }
+    }
+
+    .work-details {
+      width: 100% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: v.$mobile) {
+  .wrapper {
+    .work-details {
+      .work-role {
+        h3,
+        span {
+          font-size: 1.25rem;
+        }
+      }
+    }
   }
 }

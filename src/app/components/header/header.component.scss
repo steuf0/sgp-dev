@@ -1,74 +1,89 @@
-.nav {
-  &-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 11;
-    padding: 0px 50px;
-    width: 100%;
-    height: var(--nav-height);
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    filter: none !important;
-    pointer-events: auto !important;
-    user-select: auto !important;
-    -webkit-box-align: center;
-    -webkit-box-pack: justify;
-    // box-shadow: 0 10px 30px -10px var(--color-background-light);
+@use "../../../assets/css/variables" as v;
+
+header {
+  backdrop-filter: blur(10px);
+  filter: none !important;
+}
+
+.navbar {
+  ul {
+    li {
+      counter-increment: item 1;
+      background-color: var(--color-bg);
+      margin: 0 5px;
+      a {
+        color: var(--color-text);
+
+        &::before {
+          content: "0" counter(item) ".";
+          margin-right: 5px;
+          color: var(--color-blue);
+          font-size: var(--fz-xxs);
+          text-align: right;
+        }
+      }
+    }
+
+    .dropdown-menu.show {
+      background-color: var(--color-bg-light);
+      border-color: var(--color-blue-light2);
+
+      a {
+        &::before {
+          display: none;
+        }
+      }
+    }
   }
 
-  &-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    counter-reset: item 0;
-    z-index: 12;
-    -webkit-box-pack: justify;
-    -webkit-box-align: center;
+  &-toggler {
+    border-color: var(--color-blue);
+  }
 
-    .anchors {
-      display: flex;
-      -webkit-box-align: center;
-      align-items: center;
+  &-collapse {
+    &.collapsing,
+    &.show {
+      background-color: var(--color-bg-light);
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+  }
 
-      ol {
-        display: flex;
-        -webkit-box-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        align-items: center;
-        padding: 0px;
-        margin: 0px;
-        list-style: none;
+  i-feather {
+    stroke: var(--color-blue);
+  }
+}
 
-        li {
-          margin: 0 5px;
-          margin: 0px 5px;
-          position: relative;
-          counter-increment: item 1;
-          font-size: 13px;
+ul.dropdown-menu.show {
+  background-color: transparent;
+  width: fit-content;
+  padding: 1rem 0;
 
-          a {
-            padding: 10px;
+  li {
+    a span {
+      display: block;
+    }
 
-            &::before {
-              content: "0" counter(item) ".";
-              margin-right: 5px;
-              color: var(--color-blue);
-              font-size: var(--fz-xxs);
-              text-align: right;
-            }
-          }
-        }
+    &:not(:last-child) {
+      padding-bottom: 0.25rem;
+      a span {
+        border-bottom: 1px solid var(--color-blue-light2);
+        padding-bottom: 0.75rem;
       }
     }
   }
 }
 
-@media only screen and (max-width: var(--mobile)) {
-  #header {
-    padding: 0 25px;
+@media only screen and (max-width: v.$desktop-md) {
+  .navbar {
+    ul {
+      li {
+        background-color: transparent;
+      }
+
+      .resume {
+        margin-top: 1rem;
+      }
+    }
   }
 }

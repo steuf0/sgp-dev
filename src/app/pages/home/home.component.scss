@@ -69,6 +69,17 @@
   }
 }
 
+@media only screen and (max-width: v.$desktop-lgsm) {
+  .content {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (max-width: v.$mobile) {
+  .content {
+    padding: 0 2rem;
+  }
+}
+
 @media only screen and (max-width: v.$mobile) {
   .numbered-title {
     &::after {
