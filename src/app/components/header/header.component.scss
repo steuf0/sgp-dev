@@ -41,6 +41,10 @@ header {
 
   &-toggler {
     border-color: var(--color-blue);
+
+    &-icon {
+      background-image: none;
+    }
   }
 
   &-collapse {
