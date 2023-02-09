@@ -1,7 +1,8 @@
+import { LocalStorageService } from './services/local-storage.service';
 import { Component } from '@angular/core';
 import { LanguageService } from './services/language.service';
 import { environment } from 'src/environment/environment';
-import { Observable } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = 'SGP.Dev';
-  language: string = '';
+  currentLanguage: string = '';
   env = environment;
 
   icons = [
@@ -29,9 +30,30 @@ export class AppComponent {
     },
   ];
 
-  constructor(private languageService: LanguageService) {
-    this.languageService.language.subscribe(
-      (language: string) => (this.language = language.toUpperCase())
-    );
+  constructor(
+    private languageService: LanguageService,
+    private translate: TranslateService,
+    private localStorage: LocalStorageService
+  ) {
+    this.languageService.language.subscribe((language: string) => {
+      if (language) {
+        this.currentLanguage = language.toUpperCase();
+      } else {
+        this.getBrowserLanguage();
+      }
+    });
+  }
+
+  getBrowserLanguage() {
+    let browserLang = this.translate.getBrowserLang()?.toUpperCase();
+
+    if (browserLang) {
+      this.setLanguage(browserLang);
+    }
+  }
+
+  setLanguage(language: string) {
+    this.translate.use(language);
+    this.languageService.set(language);
   }
 }

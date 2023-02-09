@@ -1,15 +1,14 @@
 <section class="bio">
-  <div class="row justify-content-between">
+  <div class="row justify-content-between w-100">
     <div
       class="bio-info d-flex flex-column justify-content-center col-12 col-lg-6"
     >
-      <p>Oi! Me chamo</p>
-      <h1 class="text-blue">Sthéfano Garcia Pícoli</h1>
-      <h4 class="mt-2 mb-4">Eu desenvolvo coisas para a web.</h4>
+      <p>{{ "hero.greetings" | translate }}</p>
+      <h1 class="text-blue">{{ "hero.name" | translate }}</h1>
+      <h4 class="mt-2 mb-4">{{ "hero.subtitle" | translate }}</h4>
 
       <p class="text-light">
-        Sou um desenvolvedor de software com experiência na construção de
-        aplicações web focadas na escalabilidade e experiência do usuário.
+        {{ "hero.first_paragraph" | translate }}
       </p>
 
       <app-resume-button

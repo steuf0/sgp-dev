@@ -24,7 +24,7 @@
     font-size: clamp(1.25rem, 5vw, var(--fz-sm));
     font-weight: 400;
     width: initial;
-    
+
     &::before {
       top: 0;
       font-size: clamp(1rem, 5vw, var(--fz-sm));
@@ -76,6 +76,7 @@
 }
 @media only screen and (max-width: v.$mobile) {
   .content {
+    margin-top: 1.5rem;
     padding: 0 2rem;
   }
 }

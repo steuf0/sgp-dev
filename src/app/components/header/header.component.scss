@@ -13,6 +13,13 @@ header {
       background-color: var(--color-bg);
       margin: 0 5px;
       border-radius: 0.25rem;
+
+      &.no-before {
+        a::before {
+          display: none !important;
+        }
+      }
+
       a {
         color: var(--color-text);
 
@@ -33,7 +40,17 @@ header {
       background-color: var(--color-bg-light);
       border-color: var(--color-blue-light2);
 
+      li {
+        padding: 0;
+      }
+
       a {
+        &.selected {
+          span {
+            color: var(--color-blue-light);
+          }
+        }
+
         &::before {
           display: none;
         }
@@ -66,7 +83,6 @@ header {
 ul.dropdown-menu.show {
   background-color: transparent;
   width: fit-content;
-  padding: 1rem 0;
 
   li {
     a span {
@@ -87,11 +103,29 @@ ul.dropdown-menu.show {
   .navbar {
     ul {
       li {
+        padding: 0.5rem;
+        font-size: 1.25rem;
         background-color: transparent;
+
+        a {
+          &::before {
+            font-size: var(--fz-md);
+          }
+        }
       }
 
       .resume {
         margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: v.$mobile) {
+  .navbar {
+    ul {
+      .resume {
+        align-self: flex-end;
       }
     }
   }

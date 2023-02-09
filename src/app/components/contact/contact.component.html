@@ -1,11 +1,10 @@
 <div class="wrapper text-center">
-  <h1 class="mb-4">Fala comigo</h1>
+  <h1 class="mb-4">{{ "contact_info.title" | translate }}</h1>
 
   <p class="mb-4 text-light">
-    Quer me convidar para um novo desafio profissional, dar feedback ou apenas
-    saber um pouco mais sobre mim?
+    {{ "contact_info.first_paragraph" | translate }}
   </p>
-  <p class="mb-4">Me manda um e-mail e eu ficarei feliz em te responder!</p>
+  <p class="mb-4">{{ "contact_info.second_paragraph" | translate }}</p>
 
   <a class="pt-3 pb-1 underline" href="mailto:{{ env.email }}"
     ><i-feather name="mail"></i-feather>{{ env.email }}</a

@@ -1,3 +1,4 @@
+import { TranslateService } from '@ngx-translate/core';
 import { LocalStorageService } from './local-storage.service';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -6,19 +7,27 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class LanguageService {
-  constructor(private localStorage: LocalStorageService) {}
+  constructor(
+    private localStorage: LocalStorageService,
+    private translate: TranslateService
+  ) {
+    this.get();
+  }
 
-  private languageSource = new BehaviorSubject<String>('pt');
+  private languageSource = new BehaviorSubject<String>('');
   language: any = this.languageSource.asObservable();
 
-  setLanguage(language: string) {
+  set(language: string) {
     this.localStorage.set('lang', language);
+    this.translate.use(language);
     this.languageSource.next(language);
   }
 
-  getLanguage() {
+  get() {
     let lang = this.localStorage.get('lang');
 
-    if (lang) this.setLanguage(lang);
+    if (lang) {
+      this.set(lang);
+    }
   }
 }
