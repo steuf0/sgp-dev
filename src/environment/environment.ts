@@ -1,8 +1,8 @@
 export const environment: any = {
   email: 'sthefanog@gmail.com',
   available_languages: [
-    { acro: 'PT', name: 'Português', image: '🇧🇷' },
-    { acro: 'EN', name: 'English', image: '🇬🇧' },
+    { acro: 'pt', name: 'Português', image: '🇧🇷' },
+    { acro: 'en', name: 'English', image: '🇬🇧' },
   ],
   resume: {
     pt: 'assets/files/Resume-PTBR.pdf',

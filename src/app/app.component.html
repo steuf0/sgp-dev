@@ -22,7 +22,7 @@
         data-bs-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
-        >{{ currentLanguage }}</a
+        >{{ currentLanguage.toUpperCase() }}</a
       >
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <a
@@ -33,17 +33,6 @@
         >
       </div>
     </div>
-    <!-- <a class="lang text-center">
-      <img
-        [src]="
-          currentLanguage === 'PT'
-            ? '../assets/images/br-flag.png'
-            : '../assets/images/uk-flag.png'
-        "
-        alt=""
-      />
-      {{ currentLanguage }}
-    </a> -->
   </div>
 </div>
 <router-outlet></router-outlet>

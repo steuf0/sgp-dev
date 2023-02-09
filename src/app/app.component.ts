@@ -37,7 +37,7 @@ export class AppComponent {
   ) {
     this.languageService.language.subscribe((language: string) => {
       if (language) {
-        this.currentLanguage = language.toUpperCase();
+        this.currentLanguage = language;
       } else {
         this.getBrowserLanguage();
       }
@@ -45,7 +45,7 @@ export class AppComponent {
   }
 
   getBrowserLanguage() {
-    let browserLang = this.translate.getBrowserLang()?.toUpperCase();
+    let browserLang = this.translate.getBrowserLang();
 
     if (browserLang) {
       this.setLanguage(browserLang);
