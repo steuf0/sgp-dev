@@ -2,17 +2,19 @@
   <main class="content container">
     <app-bio></app-bio>
     <section id="about">
-      <h2 class="numbered-title">Sobre mim</h2>
+      <h2 class="numbered-title">{{ "about_me.anchor" | translate }}</h2>
       <app-about></app-about>
     </section>
 
     <section id="work">
-      <h2 class="numbered-title">Experiência</h2>
+      <h2 class="numbered-title">{{ "work_experience.anchor" | translate }}</h2>
       <app-work></app-work>
     </section>
 
     <section id="contact" class="contact d-flex flex-column align-items-center">
-      <h2 class="numbered-title no-line">Contato</h2>
+      <h2 class="numbered-title no-line">
+        {{ "contact_info.anchor" | translate }}
+      </h2>
       <app-contact></app-contact>
     </section>
   </main>

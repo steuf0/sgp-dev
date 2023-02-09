@@ -1,6 +1,57 @@
 {
-  "bio": {
-    "name": "Sthéfano Garcia",
-    "first_paragraph": "Front-end developer from Brazil"
-  }
+  "hero": {
+    "greetings": "Hi! My name is",
+    "name": "Sthéfano Garcia Pícoli",
+    "subtitle": "I develop things for the web.",
+    "first_paragraph": "I'm a software developer with experience building web apps focused on scalability and user experience."
+  },
+
+  "about_me": {
+    "anchor": "About me",
+    "first_paragraph": "Hi! My name is Sthéfano and I'm a web developer. Graduated in 2022 in Systems Analysis and Development by UniSales, I was awarded 'Featured Project' amongst all university courses on 3 out of the 5 semesters of my graduation. During my academic journey, I developed projects using C, Python, Java, JavaScript and the Vue.js framework.",
+    "second_paragraph": "I also had the opportunity to work in a growing fintech from Vitória, Brazil, where I learned and improved clean code and good programming practices.",
+    "third_paragraph": "Here are some of the technologies I have been working on professionally lately:"
+  },
+
+  "work_experience": {
+    "anchor": "Work experience",
+    "companies": [
+      {
+        "company": "Paytime Fintech",
+        "role": "Front-end developer",
+        "period": "Apr 2022 - Jan 2023",
+        "total_time": "10 months",
+        "link": "https://www.paytime.com.br",
+        "details": {
+          "0": "Responsible for developing the company website aswell as their customers' and ecommerce portal, used by over <b class='text-blue'>70.000</b> customers and transactioning over <b class='text-blue'>R$5 billion</b> annually",
+          "1": "Got exposed to Angular during my tenure and used it as the main framework for most of the projects within Paytime",
+          "2": "Advocated and helped establishing best practices within the engineering team, which brought benefits to the stability of the product and code hygiene. Engineers felt better working on projects",
+          "3": "Being proactive and bringing many technical contributions that improved the overall experience at Paytime, I quickly got hired as a fulltime employee after only 3 months of internship, which felt nice",
+          "4": "Reviewing, analyzing and refactoring code",
+          "5": "Worked closely with other teams to deliver the best possible user experience"
+        }
+      }
+    ]
+  },
+
+  "contact_info": {
+    "anchor": "Contact",
+    "title": "Get in touch",
+    "first_paragraph": "Wanna invite me to a new professional challenge, give feedback or just get to know me better?",
+    "second_paragraph": "Send me an e-mail and I'll be happy to get back to you!"
+  },
+
+  "header_anchors": [
+    { "name": "About", "ref": "#about" },
+    { "name": "Work", "ref": "#work" },
+    { "name": "Contact", "ref": "#contact" }
+  ],
+
+  "footer": { "text": "Developed by Sthéfano G. Pícoli" },
+
+  "resume_button": {
+    "text": "Resume"
+  },
+
+  "language_switch": "Language"
 }

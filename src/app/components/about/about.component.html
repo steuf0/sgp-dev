@@ -1,74 +1,22 @@
 <div class="row justify-content-between flex-row-reverse mt-4">
   <div class="col-12 col-lg-6 d-flex flex-column">
     <p class="mt-4 text-light">
-      Olá! Meu nome é Sthéfano e eu sou um desenvolvedor de aplicações web.
-      Graduado em 2022 em Análise e Desenvolvimento de Sistemas pela UniSales,
-      obtive o prêmio de Projeto Destaque entre todos os cursos da universidade
-      em 3 dos 5 períodos da graduação. Durante minha jornada acadêmica,
-      desenvolvi projetos utilizando C, Java, JavaScript e framework VueJS.
+      {{ "about_me.first_paragraph" | translate }}
     </p>
 
     <p class="mt-3 text-light">
-      Tive também a oportunidade de trabalhar em uma fintech de Vitória/ES, onde
-      aprendi e aperfeiçoei código limpo e boas práticas de programação. <br />
-      Algumas tecnologias que tive experiências profissionais recentemente:
+      {{ "about_me.second_paragraph" | translate }} <br />
+      {{ "about_me.third_paragraph" | translate }}
     </p>
     <div class="technologies">
-      <img
-        alt="HTML"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-      />
-      <img
-        alt="CSS"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-      />
-      <img
-        alt="JS"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-      />
-      <img
-        alt="TS"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-      />
-      <img
-        alt="Angular"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-      />
-      <img
-        alt="SASS"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-      />
-      <img
-        alt="Bootstrap"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-      />
-      <img
-        alt="Material UI"
-        height="30"
-        width="40"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
-      />
+      <app-technologies></app-technologies>
     </div>
   </div>
   <div
     class="col-12 col-lg-6 d-none d-lg-flex justify-content-center justify-content-lg-start"
   >
     <div class="image text-end restrict-width">
-      <img src="assets/images/coding.png" alt="Código" />
+      <img src="assets/images/coding.png" alt="Coding" />
     </div>
   </div>
 </div>

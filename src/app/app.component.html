@@ -12,7 +12,7 @@
   </div>
 </div>
 
-<!-- <div class="side-div right only-lg">
+<div class="side-div right only-lg">
   <div class="side-content">
     <div class="dropdown">
       <a
@@ -22,27 +22,30 @@
         data-bs-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
-        >{{ language }}</a
+        >{{ currentLanguage }}</a
       >
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" *ngFor="let lang of env.available_languages">{{
-          lang.name
-        }}</a>
+        <a
+          class="dropdown-item"
+          *ngFor="let lang of env.available_languages"
+          (click)="setLanguage(lang.acro)"
+          >{{ lang.image }} {{ lang.name }}</a
+        >
       </div>
     </div>
-    <a class="lang text-center">
+    <!-- <a class="lang text-center">
       <img
         [src]="
-          language === 'PT'
+          currentLanguage === 'PT'
             ? '../assets/images/br-flag.png'
             : '../assets/images/uk-flag.png'
         "
         alt=""
       />
-      {{ language }}
-    </a>
+      {{ currentLanguage }}
+    </a> -->
   </div>
-</div> -->
+</div>
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>

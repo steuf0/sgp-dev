@@ -46,6 +46,11 @@ section {
   }
 }
 
+.btn-ghost {
+  border: 1px solid var(--color-text) !important;
+  color: var(--color-text) !important;
+}
+
 a {
   text-decoration: none;
   color: inherit;

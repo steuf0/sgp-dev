@@ -16,7 +16,12 @@
       </div>
 
       <div class="work-details">
-        <div *ngFor="let company of env.work_history; let i = index">
+        <div
+          *ngFor="
+            let company of 'work_experience.companies' | translate;
+            let i = index
+          "
+        >
           <div *ngIf="currentTab === i">
             <div class="work-role">
               <h3>

@@ -35,18 +35,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about"
-              >Sobre</a
-            >
+          <li
+            class="nav-item"
+            *ngFor="let anchor of 'header_anchors' | translate"
+          >
+            <a class="nav-link" aria-current="page" [href]="anchor.ref">{{
+              anchor.name
+            }}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#work">Experiência</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
-          </li>
-          <!-- <li class="nav-item dropdown only-mobile">
+          <li class="nav-item dropdown no-before py-1 only-mobile">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -55,17 +52,21 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              Idioma
+              {{ "language_switch" | translate }}
             </a>
 
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li *ngFor="let lang of env.available_languages">
-                <a class="dropdown-item" href="#">
+                <a
+                  class="dropdown-item"
+                  (click)="setLanguage(lang.acro)"
+                  [class.selected]="lang.acro === currentLanguage"
+                >
                   <span>{{ lang.image }} {{ lang.name }}</span></a
                 >
               </li>
             </ul>
-          </li> -->
+          </li>
           <li class="resume">
             <app-resume-button></app-resume-button>
           </li>

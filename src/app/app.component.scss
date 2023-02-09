@@ -65,13 +65,23 @@
 }
 
 .dropdown {
-  .dropdown-content {
-    display: none;
-  }
+  &-menu.show {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-blue-light2);
+    padding: 0;
 
-  &:hover {
-    .dropdown-content {
-      display: block;
+    a {
+      color: var(--color-text);
+      border-radius: 0.25rem;
+      margin: 0;
+
+      &:hover {
+        background-color: var(--color-bg-light);
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--color-blue-light3);
+      }
     }
   }
 }

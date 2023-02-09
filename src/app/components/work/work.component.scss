@@ -1,6 +1,7 @@
 @use "../../../assets/css/variables" as v;
 
 .wrapper {
+  min-height: 700px;
   .active {
     background-color: var(--color-blue-light3);
     color: var(--color-blue);
