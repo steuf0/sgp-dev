@@ -5,8 +5,8 @@ export const environment: any = {
     { acro: 'EN', name: 'English', image: '🇬🇧' },
   ],
   resume: {
-    pt: '/assets/files/Resume-PTBR.pdf',
-    en: '/assets/files/Resume-EN.pdf',
+    pt: 'assets/files/Resume-PTBR.pdf',
+    en: 'assets/files/Resume-EN.pdf',
   },
   links: {
     repository: 'https://github.com/steuf0/spg-dev',
