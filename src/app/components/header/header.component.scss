@@ -21,9 +21,12 @@ header {
           font-size: var(--fz-xxs);
           text-align: right;
         }
+
+        &:hover {
+          color: var(--color-blue);
+        }
       }
     }
-
     .dropdown-menu.show {
       background-color: var(--color-bg-light);
       border-color: var(--color-blue-light2);
