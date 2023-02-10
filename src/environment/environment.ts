@@ -1,5 +1,6 @@
 export const environment: any = {
   email: 'sthefanog@gmail.com',
+  fallback_language: 'en',
   available_languages: [
     { acro: 'pt', name: 'Português', image: '🇧🇷' },
     { acro: 'en', name: 'English', image: '🇬🇧' },

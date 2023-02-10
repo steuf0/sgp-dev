@@ -32,8 +32,7 @@ export class AppComponent {
 
   constructor(
     private languageService: LanguageService,
-    private translate: TranslateService,
-    private localStorage: LocalStorageService
+    private translate: TranslateService
   ) {
     this.languageService.language.subscribe((language: string) => {
       if (language) {
@@ -42,18 +41,31 @@ export class AppComponent {
         this.getBrowserLanguage();
       }
     });
+
+    this.translate.setDefaultLang(this.env.fallback_language);
   }
 
   getBrowserLanguage() {
     let browserLang = this.translate.getBrowserLang();
+    let languageSupported = this.checkIfLanguageExists(browserLang);
 
-    if (browserLang) {
+    if (browserLang && !languageSupported) {
+      this.setLanguage(this.env.fallback_language);
+    }
+
+    if (browserLang && languageSupported) {
       this.setLanguage(browserLang);
     }
   }
 
   setLanguage(language: string) {
-    this.translate.use(language);
     this.languageService.set(language);
+  }
+
+  checkIfLanguageExists(language: string | undefined) {
+    let availableLanguages = this.env.available_languages.map(
+      (availableLanguages: any) => availableLanguages.acro
+    );
+    return availableLanguages.includes(language);
   }
 }
