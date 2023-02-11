@@ -14,12 +14,6 @@ header {
       margin: 0 5px;
       border-radius: 0.25rem;
 
-      &.no-before {
-        a::before {
-          display: none !important;
-        }
-      }
-
       a {
         color: var(--color-text);
 
@@ -98,6 +92,12 @@ ul.dropdown-menu.show {
     }
   }
 }
+
+.no-before {
+        a::before {
+          display: none !important;
+        }
+      }
 
 @media only screen and (max-width: v.$desktop-md) {
   .navbar {
