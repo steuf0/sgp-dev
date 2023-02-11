@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class TechnologiesComponent {
   technologies = [
     {
-      name: 'TS',
+      name: 'TypeScript',
       path: 'typescript',
     },
     {
-      name: 'JS',
+      name: 'JavaScript',
       path: 'javascript',
     },
     {
