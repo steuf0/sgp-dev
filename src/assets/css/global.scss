@@ -14,16 +14,9 @@ $photo-size: 400px;
 body {
   margin: 0px;
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-bg);
-}
-
-#main {
-  min-height: 100vh;
-  width: 100%;
 }
 
 section {
@@ -46,17 +39,15 @@ section {
   font-size: 1rem;
 
   &.btn-ghost {
-  border: 1px solid var(--color-text) !important;
-  color: var(--color-text) !important;
-}
+    border: 1px solid var(--color-text) !important;
+    color: var(--color-text) !important;
+  }
 
   &:hover {
     border: inherit;
     background-color: var(--color-blue-light3);
   }
 }
-
-
 
 a {
   text-decoration: none;
