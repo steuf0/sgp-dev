@@ -2,6 +2,7 @@
 
 .content {
   height: 100%;
+  width: calc(100vw - 50px);
   display: flex;
   flex-direction: column;
   counter-reset: section 0;

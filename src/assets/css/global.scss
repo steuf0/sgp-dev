@@ -14,7 +14,8 @@ $photo-size: 400px;
 body {
   margin: 0px;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-bg);
@@ -32,6 +33,10 @@ section {
 
 .btn {
   border-radius: 0.25rem !important;
+
+  .no-border {
+    border: 1px solid transparent;
+  }
 }
 
 .btn-blue {
@@ -40,16 +45,18 @@ section {
   background-color: transparent;
   font-size: 1rem;
 
+  &.btn-ghost {
+  border: 1px solid var(--color-text) !important;
+  color: var(--color-text) !important;
+}
+
   &:hover {
     border: inherit;
     background-color: var(--color-blue-light3);
   }
 }
 
-.btn-ghost {
-  border: 1px solid var(--color-text) !important;
-  color: var(--color-text) !important;
-}
+
 
 a {
   text-decoration: none;

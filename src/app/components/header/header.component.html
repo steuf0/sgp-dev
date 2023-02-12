@@ -67,8 +67,29 @@
               </li>
             </ul>
           </li>
-          <li class="resume align-self-end align-self-md-start no-before">
+          <li
+            class="resume d-flex align-self-end align-self-md-start no-before"
+          >
             <app-resume-button></app-resume-button>
+            <!-- <div class="dropdown">
+              <a
+                class="btn btn-ghost no-border dropdown-toggle"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >{{ currentLanguage.toUpperCase() }}</a
+              >
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a
+                  class="dropdown-item"
+                  *ngFor="let lang of env.available_languages"
+                  (click)="setLanguage(lang.acro)"
+                  >{{ lang.image }} {{ lang.name }}</a
+                >
+              </div>
+            </div> -->
           </li>
         </ul>
       </div>
