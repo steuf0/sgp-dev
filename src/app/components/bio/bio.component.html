@@ -9,10 +9,14 @@
 
       <p class="text-light">
         {{ "hero.first_paragraph" | translate }}
+        <br /><br />
+        {{ "hero.second_paragraph" | translate }}
+        <br /><br />
+        {{ "hero.third_paragraph" | translate }}
       </p>
 
       <app-resume-button
-        class="only-desktop"
+        class="d-none d-lg-block"
         cssClass="p-3 mt-4"
       ></app-resume-button>
     </div>
@@ -24,7 +28,7 @@
         <img src="assets/images/me.png" alt="SGP.Dev" />
       </div>
       <app-resume-button
-        class="only-md w-100"
+        class="d-block d-lg-none w-100"
         cssClass="p-3 mt-5"
         [mobileFullWidth]="true"
       ></app-resume-button>

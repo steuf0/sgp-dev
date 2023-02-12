@@ -2,15 +2,18 @@
   "hero": {
     "greetings": "Hi! My name is",
     "name": "Sthéfano Garcia Pícoli",
-    "subtitle": "I develop things for the web.",
-    "first_paragraph": "I'm a software developer with experience building web apps focused on scalability and user experience."
+    "subtitle": "I'm a software developer",
+    "first_paragraph": "Front-end developer experienced in building web apps with Angular, JavaScript, TypeScript, SASS, Bootstrap, Material UI, Git and SCRUM.",
+    "second_paragraph": "Graduated on Systems Analysis and Development by UniSalesiano (Q2 2022).",
+    "third_paragraph": "C2 Proficient English Speaker certified by EFSET."
   },
 
   "about_me": {
     "anchor": "About me",
     "first_paragraph": "Hi! My name is Sthéfano and I'm a web developer. Graduated in 2022 in Systems Analysis and Development by UniSales, I was awarded 'Featured Project' amongst all university courses on 3 out of the 5 semesters of my graduation. During my academic journey, I developed projects using C, Python, Java, JavaScript and the Vue.js framework.",
-    "second_paragraph": "I also had the opportunity to work in a growing fintech from Vitória, Brazil, where I learned and improved clean code and good programming practices.",
-    "third_paragraph": "Here are some of the technologies I have been working on professionally lately:"
+    "second_paragraph": "I am a certified C2 Proficient English speaker.",
+    "third_paragraph": "I had the opportunity to work in a growing fintech from Vitória, Brazil, where I learned and improved clean code and good programming practices.",
+    "fourth_paragraph": "Here are some of the technologies I have been working on professionally lately:"
   },
 
   "work_experience": {
@@ -53,5 +56,7 @@
     "text": "Resume"
   },
 
-  "language_switch": "Language"
+  "language_switch": "Language",
+
+  "certificate": "see certificate"
 }

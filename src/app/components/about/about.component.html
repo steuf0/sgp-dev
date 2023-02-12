@@ -1,19 +1,30 @@
 <div class="row justify-content-between flex-row-reverse mt-4">
-  <div class="col-12 col-lg-6 d-flex flex-column">
+  <div class="col-12 col-xl-6 d-flex flex-column">
     <p class="mt-4 text-light">
       {{ "about_me.first_paragraph" | translate }}
     </p>
 
     <p class="mt-3 text-light">
-      {{ "about_me.second_paragraph" | translate }} <br />
-      {{ "about_me.third_paragraph" | translate }}
+      {{ "about_me.second_paragraph" | translate }}
+      <a
+        [href]="env.certificates.efset"
+        class="text-blue underline"
+        target="_blank"
+        >({{ "certificate" | translate }}
+        <i-feather name="external-link"></i-feather>)</a
+      >
+    </p>
+
+    <p class="mt-3 text-light">
+      {{ "about_me.third_paragraph" | translate }} <br />
+      {{ "about_me.fourth_paragraph" | translate }}
     </p>
     <div class="technologies">
       <app-technologies></app-technologies>
     </div>
   </div>
   <div
-    class="col-12 col-lg-6 d-none d-lg-flex justify-content-center justify-content-lg-start"
+    class="col-12 col-xl-6 d-none d-xl-flex justify-content-center justify-content-lg-start"
   >
     <div class="image text-end restrict-width">
       <img src="assets/images/coding.png" alt="Coding" />

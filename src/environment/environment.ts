@@ -14,6 +14,10 @@ export const environment: any = {
     linkedin: 'https://www.linkedin.com/in/sthefanogarcia/',
     github: 'https://github.com/steuf0',
   },
+  certificates: {
+    efset: 'https://www.efset.org/cert/camUSB',
+  },
+
   work_history: [
     {
       company: 'Paytime Fintech',
