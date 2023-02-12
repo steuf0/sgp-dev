@@ -1,5 +1,4 @@
 import { LanguageService } from 'src/app/services/language.service';
-import { TranslateService } from '@ngx-translate/core';
 import { Component } from '@angular/core';
 
 import { environment } from 'src/environment/environment';
@@ -14,7 +13,6 @@ export class HeaderComponent {
   currentLanguage: string = '';
 
   constructor(
-    private translate: TranslateService,
     private languageService: LanguageService
   ) {
     this.languageService.language.subscribe(
@@ -23,7 +21,6 @@ export class HeaderComponent {
   }
 
   setLanguage(language: string) {
-    this.translate.use(language);
     this.languageService.set(language);
   }
 }
