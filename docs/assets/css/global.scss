@@ -99,11 +99,7 @@ ul {
 
 //region text
 .text-blue {
-  color: var(--color-blue);
-}
-
-.text-orange {
-  color: var(--color-orange);
+  color: var(--color-blue) !important;
 }
 
 .text-light {
@@ -137,31 +133,5 @@ i-feather {
   &:hover {
     transform: scale(1.1);
     stroke: var(--color-blue) !important;
-  }
-}
-
-//region responsive
-.only-mobile,
-.only-md {
-  display: none;
-}
-
-@media only screen and (max-width: v.$desktop-md) {
-  .only-md {
-    display: initial;
-  }
-
-  .only-desktop {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: v.$mobile) {
-  .only-mobile {
-    display: initial;
-  }
-
-  .only-lg {
-    display: none;
   }
 }

@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 
 import { FeatherModule } from 'angular-feather';
-import { Github, Linkedin, Mail, Globe, Menu } from 'angular-feather/icons';
+import {
+  Github,
+  Linkedin,
+  Mail,
+  Globe,
+  Menu,
+  ExternalLink,
+} from 'angular-feather/icons';
 
-const icons = { Github, Linkedin, Mail, Globe, Menu };
+const icons = { Github, Linkedin, Mail, Globe, Menu, ExternalLink };
 
 @NgModule({
   declarations: [],

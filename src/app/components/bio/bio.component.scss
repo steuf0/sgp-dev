@@ -16,6 +16,12 @@
       object-fit: fill;
     }
   }
+
+  &-info {
+    p.text-light {
+      min-height: 170px;
+    }
+  }
 }
 
 @media only screen and (max-width: v.$desktop-md) {
