@@ -2,15 +2,18 @@
   "hero": {
     "greetings": "Oi! Me chamo",
     "name": "Sthéfano Garcia Pícoli",
-    "subtitle": "Eu desenvolvo coisas para a web.",
-    "first_paragraph": "Sou um desenvolvedor de software com experiência na construção de aplicações web focadas na escalabilidade e experiência do usuário."
+    "subtitle": "Desenvolvedor de software",
+    "first_paragraph": "Desenvolvedor front-end com experiência construindo aplicações web utilizando Angular, JavaScript, TypeScript, SASS, Bootstrap, Material UI, Git e metodologia Scrum.",
+    "second_paragraph": "Graduado em Análise e Desenvolvimento de Sistemas pela UniSales (2022).",
+    "third_paragraph": "Nível C2 Proficiente em Inglês, certificado pela EFSET."
   },
 
   "about_me": {
     "anchor": "Sobre mim",
     "first_paragraph": "Olá! Meu nome é Sthéfano e eu sou um desenvolvedor de aplicações web. Graduado em 2022 em Análise e Desenvolvimento de Sistemas pela UniSales, obtive o prêmio de Projeto Destaque entre todos os cursos da universidade em 3 dos 5 períodos da graduação. Durante minha jornada acadêmica, desenvolvi projetos utilizando C, Python, Java, JavaScript e framework VueJS.",
-    "second_paragraph": "Tive também a oportunidade de trabalhar em uma fintech de Vitória/ES, onde aprendi e aperfeiçoei código limpo e boas práticas de programação.",
-    "third_paragraph": " Algumas tecnologias que tive experiências profissionais recentemente:"
+    "second_paragraph": "Nível C2 Proficiente em Inglês, certificado pela EFSET.",
+    "third_paragraph": "Tive também a oportunidade de trabalhar em uma fintech de Vitória/ES, onde aprendi e aperfeiçoei código limpo e boas práticas de programação.",
+    "fourth_paragraph": " Algumas tecnologias que tive experiências profissionais recentemente:"
   },
 
   "work_experience": {
@@ -54,5 +57,7 @@
     "text": "Currículo"
   },
 
-  "language_switch": "Idioma"
+  "language_switch": "Idioma",
+
+  "certificate": "ver certificado"
 }
