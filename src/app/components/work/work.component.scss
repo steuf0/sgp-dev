@@ -42,6 +42,13 @@
 
   .work-buttons {
     width: 16.66666667%;
+    button {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 
   .work-details {

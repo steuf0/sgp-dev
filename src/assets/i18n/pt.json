@@ -33,6 +33,16 @@
           "4": "Revisão, análise e refatoração de código",
           "5": "Trabalhei em colaboração com outras equipes para oferecer a melhor experiência de usuário possível"
         }
+      },
+      {
+        "company": "Effecti | Tecnologia para Licitantes",
+        "role": "Desenvolvedor front-end",
+        "period": "Março 2023 - presente",
+        "total_time": "",
+        "link": "https://www.effecti.com.br",
+        "details": {
+          "0": "Desenvolvo e mantenho em Vue.js o módulo Disputar da aplicação web da Minha Effecti, plataforma de gerenciamento e automação de processos de licitações de diversos estados do Brasil"
+        }
       }
     ]
   },

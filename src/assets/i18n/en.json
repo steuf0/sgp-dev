@@ -33,6 +33,16 @@
           "4": "Reviewing, analyzing and refactoring code",
           "5": "Worked closely with other teams to deliver the best possible user experience"
         }
+      },
+      {
+        "company": "Effecti | Technology for Bidders",
+        "role": "Front-end developer",
+        "period": "March 2023 - present",
+        "total_time": "",
+        "link": "https://www.effecti.com.br",
+        "details": {
+          "0": "Using Vue.js, I develop and mantain the 'Dispute' module of the 'My Effecti' web app, a management platform for monitoring and disputing public biddings from many states of Brazil"
+        }
       }
     ]
   },

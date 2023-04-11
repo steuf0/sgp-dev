@@ -4,7 +4,10 @@
       <div class="work-buttons" role="tablist">
         <button
           tpye="button"
-          *ngFor="let company of env.work_history; let i = index"
+          *ngFor="
+            let company of 'work_experience.companies' | translate;
+            let i = index
+          "
           id="tab-{{ i }}"
           role="tab"
           [tabindex]="i"
@@ -35,7 +38,9 @@
               </h3>
               <p class="text-light">
                 {{ company.period }}
-                <span class="work-time">({{ company.total_time }})</span>
+                <span class="work-time" *ngIf="company.total_time"
+                  >({{ company.total_time }})</span
+                >
               </p>
             </div>
             <ul>
